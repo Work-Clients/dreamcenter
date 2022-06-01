@@ -27,6 +27,11 @@
     <style>
       body {
         font-family: 'Quicksand', sans-serif;
+        /* background-color: #fbfbfb;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%238c444a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+
+        background-color: #fbfbfb;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ef7373' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
       }
 
       #hero-image {
@@ -35,6 +40,13 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+      }
+
+      #tran-text {
+        font-size: 72px;
+        background: -webkit-linear-gradient(#0a00ff, #f00); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     </style>
 
@@ -147,11 +159,11 @@
 
     <div class="container" style="margin-top: 10rem; margin-bottom: 10rem;">
       <div class="row">
-        <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
-          <img src="img/grow.png" alt="mus" width="512">
-        </div>
-        <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <h3 class="display-4 fw-bold">Make your dream events happen using our array of facilities and amenities…</h3>
+        <!-- <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
+          <img src="img/grow.png" alt="mus" width="100%">
+        </div> -->
+        <div class="col-sm-12">
+          <h3 id="tran-text" class="display-4 fw-bold wow animate__animated animate__flipInX">Make your dream events happen using our array of facilities and amenities…</h3>
         </div>
       </div>
     </div>
@@ -159,7 +171,10 @@
     <div class="container mt-5" id="gallery">
       <div class="row">
         <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <h3 class="display-5 fw-bold fst-italic">A great lounge for all pretalk and hangout.</h3>
+          <div>
+            <h3 class="display-5 fw-bold fst-italic mb-0">A great lounge.</h3>
+            <h5>For all pretalk and hangout.</h5>
+          </div>
         </div>
         <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
           <img class="w-100" src="img/dc-2.jpg" alt="dc-2">
@@ -168,7 +183,10 @@
 
       <div class="row mt-5">
         <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <h3 class="display-5 fw-bold fst-italic">Meeting room for all business needs.</h3>
+          <div>
+            <h3 class="display-5 fw-bold fst-italic mb-0">Meeting Room.</h3>
+            <h5>For all business needs.</h5>
+          </div>
         </div>
         <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
           <img class="w-100" src="img/dc-3.jpg" alt="dc-2">
@@ -177,7 +195,10 @@
 
       <div class="row mt-5">
         <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <h3 class="display-5 fw-bold fst-italic">Central hall where dreams come true.</h3>
+          <div>
+            <h3 class="display-5 fw-bold fst-italic mb-0">Dream Cenrtral Hall.</h3>
+            <h5>Where all your dreams happen.</h5>
+          </div>
         </div>
         <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
           <img class="w-100" src="img/dc-4.jpg" alt="dc-2">
@@ -268,7 +289,7 @@
     <div class="container mt-5 bg-primary text-white">
       <div class="row">
         <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <div class="card w-100 bg-white text-dark my-2 wow animate__animated animate__bounceInUp">
+          <div class="card w-100 bg-white text-dark my-2 wow animate__animated animate__bounceInLeft">
             <div class="card-body p-5">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <div class="mb-5">
@@ -308,12 +329,12 @@
 
     <div class="container" style="margin-top: 8rem;">
       <div class="row" id="contact">
-        <div class="col-sm-12 col-md-6 d-flex align-items-center mb-4">
+        <div class="col-sm-12 col-md-6 d-flex align-items-center mb-4 bg-white shadow">
           <div class="p-5">
             <h4 class="fw-bold display-6">Contact us</h4>
             <h4 class="mb-5 fst-italic">For booking & queries</h4>
-            <h4 class="mb-0">+91 89775 31517</h4>
-            <h4>events.dreamcenter@gmail.com</h4>
+            <h4 class="mb-0 fw-bold">+91 89775 31517</h4>
+            <h4 class="text-wrap">events.dreamcenter@gmail.com</h4>
 
             <div class="mt-5">
               <img src="img/icons/whatsapp.png" alt="wa" width="32"> <small>Chat with us now!</small><br>
