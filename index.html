@@ -27,11 +27,8 @@
     <style>
       body {
         font-family: 'Quicksand', sans-serif;
-        /* background-color: #fbfbfb;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%238c444a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
-
-        background-color: #fbfbfb;
-        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ef7373' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        background-color: #fff0f0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2342439f' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
       }
 
       #hero-image {
@@ -54,7 +51,7 @@
   </head>
 
   <body style="background-color: #fff0f0;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #fff0f0;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="img/dc-logo.png" alt="dc" width="64">
@@ -66,19 +63,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-white" href="#about">About</a>
+              <a class="nav-link text-dark" href="#about">About</a>
             </li>
             <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-white" href="#services">services</a>
+              <a class="nav-link text-dark" href="#services">Services</a>
             </li>
             <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-white" href="#gallery">Gallery</a>
+              <a class="nav-link text-dark" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-white" href="#features">Features</a>
+              <a class="nav-link text-dark" href="#features">Features</a>
             </li>
             <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-white" href="#location">Location</a>
+              <a class="nav-link text-dark" href="#location">Location</a>
             </li>
             <li class="nav-item mx-4">
               <a class="nav-link active" href="https://www.facebook.com/dreamcenterhyd/" target="_blank">
@@ -106,18 +103,18 @@
     <div id="hero-image">
       <div class="container" style="padding: 6rem 0rem;">
         <div class="row">
-          <!-- <div class="col-sm-12 col-md-6 d-flex align-items-center">
-            <div class="w-100 text-center ">
-              <img src="img/dc-logo.png" alt="dc logo" width="512"
-                class="rounded-circle wow animate__animated animate__bounceInLeft" style="background-color: #fff0f0;">
-            </div>
-          </div> -->
           <div class="col-sm-12 col-md-6 mx-auto" id="about">
             <div class="text-center rounded text-white p-5">
               <img src="img/dc-logo.png" alt="dc logo" width="256" class="rounded-circle wow animate__animated animate__bounceInLeft" style="background-color: #fff0f0; image-rendering: -webkit-optimize-contrast;">
               <h1 class="fw-bold display-4 mb-3 mt-4">DREAM CENTER</h1>
               <h4>A first-class, elegant and modern facility at the heart of Hi-tech city where your dream events can
                 happen.</h4>
+                <div class="mt-5">
+                  <small>Read more</small> <br>
+                  <a href="#services">
+                    <img src="img/down.svg" alt="down" width="32">
+                  </a>
+                </div>
             </div>
           </div>
         </div>
@@ -125,30 +122,30 @@
     </div>
 
     <div class="container my-5">
-      <div class="row" id="services">
+      <div class="row pt-5" id="services">
         <div class="col-sm-12 col-md-4 mb-4">
           <div class="card shadow mt-3">
-            <img src="img/icons/meeting.png" class="card-img-top p-4" alt="meeting">
-            <div class="card-body bg-primary text-white">
-              <h2 class="fw-bold text-center mt-3 mb-4">Business Meetings</h2>
+            <img src="img/icons/meeting.png" class="card-img-top p-4 mt-3" alt="meeting">
+            <div class="card-body">
+              <h2 class="fw-bold text-center mt-3 mb-4 bg-primary text-white p-3 rounded">Business Meetings</h2>
               <p class="card-text text-center">Town Halls, Product Launches, Meet-up groups, Trade Shows etc.</p>
             </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-4 mb-4">
           <div class="card shadow">
-            <img src="img/icons/conference.png" class="card-img-top p-4" alt="meeting">
-            <div class="card-body bg-primary text-white ">
-              <h2 class="fw-bold text-center mt-3 mb-4">Conferences & Trainings</h2>
+            <img src="img/icons/conference.png" class="card-img-top p-4 mt-3" alt="meeting">
+            <div class="card-body">
+              <h2 class="fw-bold text-center mt-3 mb-4 bg-primary text-white p-3 rounded">Conferences & Trainings</h2>
               <p class="card-text text-center">Training sessions, Conventions, Recruitment Drives etc.</p>
             </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-4 mb-4">
           <div class="card shadow mt-3">
-            <img src="img/icons/events.png" class="card-img-top p-4" alt="meeting">
-            <div class="card-body bg-primary text-white">
-              <h2 class="fw-bold text-center mt-3 mb-4">Special Events</h2>
+            <img src="img/icons/events.png" class="card-img-top p-4 mt-3" alt="meeting">
+            <div class="card-body">
+              <h2 class="fw-bold text-center mt-3 mb-4 bg-primary text-white p-3 rounded">Special Events</h2>
               <p class="card-text text-center">Wedding Receptions, Birthdays, Family Gatherings, Reunions and many more.
               </p>
             </div>
@@ -196,7 +193,7 @@
       <div class="row mt-5">
         <div class="col-sm-12 col-md-6 d-flex align-items-center">
           <div>
-            <h3 class="display-5 fw-bold fst-italic mb-0">Dream Cenrtral Hall.</h3>
+            <h3 class="display-5 fw-bold fst-italic mb-0">Dream Center Hall.</h3>
             <h5>Where all your dreams happen.</h5>
           </div>
         </div>
@@ -344,21 +341,28 @@
         </div>
 
         <div class="col-sm-12 col-md-6 d-flex align-items-center mb-4">
-          <div class="text-center w-100">
-            <img src="img/call.png" alt="testimonial" width="256" class="wow animate__animated animate__wobble">
+          <div class="w-100">
+            <h4 class="fw-bold mb-3">Directions</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.603943430335!2d78.37127911440206!3d17.430784506141112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93fe10d24179%3A0x75ae80c4f86d094b!2sDREAM%20CENTER%20-%20BANQUET%20FACILITY%20FOR%20LIFE%20EVENTS%2C%20CORPORATE%20EVENTS%2C%20TRAINING%20%26%20WORKSHOP!5e0!3m2!1sen!2sin!4v1652187141956!5m2!1sen!2sin"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container my-5" id="location">
+    <div class="container my-5 py-5" id="location">
       <div class="row">
-        <div class="col">
-          <h4 class="fw-bold">Locate Us</h4>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.603943430335!2d78.37127911440206!3d17.430784506141112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93fe10d24179%3A0x75ae80c4f86d094b!2sDREAM%20CENTER%20-%20BANQUET%20FACILITY%20FOR%20LIFE%20EVENTS%2C%20CORPORATE%20EVENTS%2C%20TRAINING%20%26%20WORKSHOP!5e0!3m2!1sen!2sin!4v1652187141956!5m2!1sen!2sin"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="col-md-4 mx-auto">
+          <div class="text-center w-100">
+            <!-- <img src="img/call.png" alt="testimonial" width="256" class="wow animate__animated animate__wobble"> -->
+            <img src="img/dc-logo.png" alt="dc" width="100%">
+            <h3 class="fw-bold">Dream Center</h3>
+            <small>Made with <span style="color: red;">&#x2764;</span> by</small> <br>
+            <small><a href="https://prasanta.business" target="_blank">Prasanta Communications</a></small>
+          </div>
         </div>
       </div>
     </div>
@@ -369,12 +373,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
 
     <script src="js/wow.min.js"></script>
     <script>
