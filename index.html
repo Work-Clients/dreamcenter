@@ -1,383 +1,442 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
-    <style>
-      body {
-        font-family: 'Quicksand', sans-serif;
-        background-color: #fff0f0;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2342439f' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-      }
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fff0f0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2342439f' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    }
 
-      #hero-image {
-        background: url(img/dc-1-e.png) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
+    #hero-image {
+      background: url(img/dc-1-e.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
 
-      #tran-text {
-        font-size: 72px;
-        background: -webkit-linear-gradient(#0a00ff, #f00); 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    </style>
+    #tran-text {
+      font-size: 72px;
+      background: -webkit-linear-gradient(#0a00ff, #f00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 
-    <title>Dream Center</title>
-  </head>
+  <title>Dream Center</title>
+</head>
 
-  <body style="background-color: #fff0f0;">
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fff0f0;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="img/dc-logo.png" alt="dc" width="64">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-dark" href="#about">About</a>
-            </li>
-            <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-dark" href="#services">Services</a>
-            </li>
-            <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-dark" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-dark" href="#features">Features</a>
-            </li>
-            <li class="nav-item mx-4 mt-2">
-              <a class="nav-link text-dark" href="#location">Location</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link active" href="https://www.facebook.com/dreamcenterhyd/" target="_blank">
-                <img src="img/icons/facebook.png" alt="fb" width="32">
-              </a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link active" href="https://www.linkedin.com/company/dreamcenter-india/" target="_blank">
-                <img src="img/icons/linkedin.png" alt="fb" width="32">
-              </a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link active" href="https://www.instagram.com/dreamcenter.india/" target="_blank">
-                <img src="img/icons/instagram.png" alt="fb" width="32">
-              </a>
-            </li>
-            <li class="nav-item mx-4 mt-1">
-              <a class="btn btn-danger" href="#contact">Contact For Booking</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div id="hero-image">
-      <div class="container" style="padding: 6rem 0rem;">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 mx-auto" id="about">
-            <div class="text-center rounded text-white p-5">
-              <img src="img/dc-logo.png" alt="dc logo" width="256" class="rounded-circle wow animate__animated animate__bounceInLeft" style="background-color: #fff0f0; image-rendering: -webkit-optimize-contrast;">
-              <h1 class="fw-bold display-4 mb-3 mt-4">DREAM CENTER</h1>
-              <h4>A first-class, elegant and modern facility at the heart of Hi-tech city where your dream events can
-                happen.</h4>
-                <div class="mt-5">
-                  <small>Read more</small> <br>
-                  <a href="#services">
-                    <img src="img/down.svg" alt="down" width="32">
-                  </a>
-                </div>
-            </div>
-          </div>
-        </div>
+<body style="background-color: #fff0f0;">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fff0f0;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/dc-logo.png" alt="dc" width="64">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-4 mt-2">
+            <a class="nav-link text-dark" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-4 mt-2">
+            <a class="nav-link text-dark" href="#services">Services</a>
+          </li>
+          <li class="nav-item mx-4 mt-2">
+            <a class="nav-link text-dark" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item mx-4 mt-2">
+            <a class="nav-link text-dark" href="#features">Features</a>
+          </li>
+          <li class="nav-item mx-4 mt-2">
+            <a class="nav-link text-dark" href="#location">Location</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link active" href="https://www.facebook.com/dreamcenterhyd/" target="_blank">
+              <img src="img/icons/facebook.png" alt="fb" width="32">
+            </a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link active" href="https://www.linkedin.com/company/dreamcenter-india/" target="_blank">
+              <img src="img/icons/linkedin.png" alt="fb" width="32">
+            </a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link active" href="https://www.instagram.com/dreamcenter.india/" target="_blank">
+              <img src="img/icons/instagram.png" alt="fb" width="32">
+            </a>
+          </li>
+          <li class="nav-item mx-4 mt-1">
+            <a class="btn btn-danger" href="#contact">Contact For Booking</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <div class="container my-5">
-      <div class="row pt-5" id="services">
-        <div class="col-sm-12 col-md-4 mb-4">
-          <div class="card shadow mt-3">
-            <img src="img/icons/meeting.png" class="card-img-top p-4 mt-3" alt="meeting">
-            <div class="card-body">
-              <h2 class="fw-bold text-center mt-3 mb-4 bg-primary text-white p-3 rounded">Business Meetings</h2>
-              <p class="card-text text-center">Town Halls, Product Launches, Meet-up groups, Trade Shows etc.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 mb-4">
-          <div class="card shadow">
-            <img src="img/icons/conference.png" class="card-img-top p-4 mt-3" alt="meeting">
-            <div class="card-body">
-              <h2 class="fw-bold text-center mt-3 mb-4 bg-primary text-white p-3 rounded">Conferences & Trainings</h2>
-              <p class="card-text text-center">Training sessions, Conventions, Recruitment Drives etc.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 mb-4">
-          <div class="card shadow mt-3">
-            <img src="img/icons/events.png" class="card-img-top p-4 mt-3" alt="meeting">
-            <div class="card-body">
-              <h2 class="fw-bold text-center mt-3 mb-4 bg-primary text-white p-3 rounded">Special Events</h2>
-              <p class="card-text text-center">Wedding Receptions, Birthdays, Family Gatherings, Reunions and many more.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" style="margin-top: 10rem; margin-bottom: 10rem;">
+  <div id="hero-image">
+    <div class="container" style="padding: 6rem 0rem;">
       <div class="row">
-        <!-- <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
+        <div class="col-sm-12 col-md-6 mx-auto" id="about">
+          <div class="text-center rounded text-white p-5">
+            <img src="img/dc-logo.png" alt="dc logo" width="256"
+              class="rounded-circle wow animate__animated animate__bounceInLeft"
+              style="background-color: #fff0f0; image-rendering: -webkit-optimize-contrast;">
+            <h1 class="fw-bold display-4 mb-3 mt-4">DREAM CENTER</h1>
+            <h4>A first-class, elegant and modern facility at the heart of Hi-tech city where your dream events can
+              happen.</h4>
+            <div class="mt-5">
+              <small>Read more</small> <br>
+              <a href="#services">
+                <img src="img/down.svg" alt="down" width="32">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row pt-5" id="services">
+      <div class="col-sm-12 col-md-4 mb-4">
+        <div class="card shadow mt-3">
+          <img src="img/icons/meeting.png" class="card-img-top p-4 mt-3" alt="meeting">
+          <div class="card-body">
+            <h2 class="fw-bold text-center mt-3 mb-4 bg-primary text-white p-3 rounded">Business Meetings</h2>
+            <p class="card-text text-center">Town Halls, Product Launches, Meet-up groups, Trade Shows etc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
+        <div class="card shadow">
+          <img src="img/icons/conference.png" class="card-img-top p-4 mt-3" alt="meeting">
+          <div class="card-body">
+            <h2 class="fw-bold text-center mt-3 mb-4 bg-primary text-white p-3 rounded">Conferences & Trainings</h2>
+            <p class="card-text text-center">Training sessions, Conventions, Recruitment Drives etc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
+        <div class="card shadow mt-3">
+          <img src="img/icons/events.png" class="card-img-top p-4 mt-3" alt="meeting">
+          <div class="card-body">
+            <h2 class="fw-bold text-center mt-3 mb-4 bg-primary text-white p-3 rounded">Special Events</h2>
+            <p class="card-text text-center">Wedding Receptions, Birthdays, Family Gatherings, Reunions and many more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 10rem; margin-bottom: 10rem;">
+    <div class="row">
+      <!-- <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
           <img src="img/grow.png" alt="mus" width="100%">
         </div> -->
-        <div class="col-sm-12">
-          <h3 id="tran-text" class="display-4 fw-bold wow animate__animated animate__flipInX">Make your dream events happen using our array of facilities and amenities…</h3>
+      <div class="col-sm-12">
+        <h3 id="tran-text" class="display-4 fw-bold wow animate__animated animate__flipInX">Make your dream events
+          happen using our array of facilities and amenities…</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5" id="gallery">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 d-flex align-items-center">
+        <div>
+          <h3 class="display-5 fw-bold fst-italic mb-0">A great lounge.</h3>
+          <h5>For all pretalk and hangout.</h5>
         </div>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
+        <img class="w-100" src="img/dc-2.jpg" alt="dc-2">
       </div>
     </div>
 
-    <div class="container mt-5" id="gallery">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <div>
-            <h3 class="display-5 fw-bold fst-italic mb-0">A great lounge.</h3>
-            <h5>For all pretalk and hangout.</h5>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
-          <img class="w-100" src="img/dc-2.jpg" alt="dc-2">
+    <div class="row mt-5">
+      <div class="col-sm-12 col-md-6 d-flex align-items-center">
+        <div>
+          <h3 class="display-5 fw-bold fst-italic mb-0">Meeting Room.</h3>
+          <h5>For all business needs.</h5>
         </div>
       </div>
+      <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
+        <img class="w-100" src="img/dc-3.jpg" alt="dc-2">
+      </div>
+    </div>
 
+    <div class="row mt-5">
+      <div class="col-sm-12 col-md-6 d-flex align-items-center">
+        <div>
+          <h3 class="display-5 fw-bold fst-italic mb-0">Dream Center Hall.</h3>
+          <h5>Where all your dreams happen.</h5>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
+        <img class="w-100" src="img/dc-4.jpg" alt="dc-2">
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light py-5 mt-5">
+    <div class="container" id="features">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="fw-bold">Our Amenities</h2>
+        </div>
+      </div>
       <div class="row mt-5">
-        <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <div>
-            <h3 class="display-5 fw-bold fst-italic mb-0">Meeting Room.</h3>
-            <h5>For all business needs.</h5>
-          </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/wifi.png" alt="wifi">
+          <p class="mt-2">Hi-Speed Internet</p>
         </div>
-        <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
-          <img class="w-100" src="img/dc-3.jpg" alt="dc-2">
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/air-conditioner.png" alt="air">
+          <p class="mt-2">Centralized A.C.</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/electric-generator.png" alt="generator">
+          <p class="mt-2">Power Back-up</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/cctv-camera.png" alt="spotlight">
+          <p class="mt-2">CCTV Surveillance</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/elevator.png" alt="air">
+          <p class="mt-2">Modern Lifts</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/escalator.png" alt="multimedia">
+          <p class="mt-2">Escalators</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/parking-area.png" alt="screen">
+          <p class="mt-2">Parking Area</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/restroom.png" alt="printer">
+          <p class="mt-2">Clean Washrooms</p>
         </div>
       </div>
-
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="fw-bold">Our Services</h2>
+        </div>
+      </div>
       <div class="row mt-5">
-        <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <div>
-            <h3 class="display-5 fw-bold fst-italic mb-0">Dream Center Hall.</h3>
-            <h5>Where all your dreams happen.</h5>
-          </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/multimedia.png" alt="multimedia">
+          <p class="mt-2">Media Center</p>
         </div>
-        <div class="col-sm-12 col-md-6 d-flex align-items-center text-center">
-          <img class="w-100" src="img/dc-4.jpg" alt="dc-2">
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/led-tv.png" alt="screen">
+          <p class="mt-2">LED Screen</p>
         </div>
-      </div>
-    </div>
-
-    <div class="bg-light py-5 mt-5">
-      <div class="container" id="features">
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="fw-bold">Our Amenities</h2>
-          </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/spotlight.png" alt="spotlight">
+          <p class="mt-2">LED Stage Lighting</p>
         </div>
-        <div class="row mt-5">
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/wifi.png" alt="wifi">
-            <p class="mt-2">Hi-Speed Internet</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/air-conditioner.png" alt="air">
-            <p class="mt-2">Centralized A.C.</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/electric-generator.png" alt="generator">
-            <p class="mt-2">Power Back-up</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/cctv-camera.png" alt="spotlight">
-            <p class="mt-2">CCTV Surveillance</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/elevator.png" alt="air">
-            <p class="mt-2">Modern Lifts</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/escalator.png" alt="multimedia">
-            <p class="mt-2">Escalators</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/parking-area.png" alt="screen">
-            <p class="mt-2">Parking Area</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/restroom.png" alt="printer">
-            <p class="mt-2">Clean Washrooms</p>
-          </div>
-        </div>
-      </div>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="fw-bold">Our Services</h2>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/multimedia.png" alt="multimedia">
-            <p class="mt-2">Media Center</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/led-tv.png" alt="screen">
-            <p class="mt-2">LED Screen</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/spotlight.png" alt="spotlight">
-            <p class="mt-2">LED Stage Lighting</p>
-          </div>
-          <div class="col-sm-12 col-md-3 mb-4 text-center">
-            <img width="64" src="img/icons/catering.png" alt="catering">
-            <p class="mt-2">Catering</p>
-          </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <img width="64" src="img/icons/catering.png" alt="catering">
+          <p class="mt-2">Catering</p>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 mb-4">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
+        <img src="img/img4.jpeg" class="img-thumbnail " alt="...">
 
-        </div>
-        <div class="col-sm-12 col-md-6">
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
 
-        </div>
+        <img src="img/img5.jpeg" class="img-thumbnail " alt="...">
+
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
+
+        <img src="img/img6.jpeg" class="img-thumbnail " alt="...">
+
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4 mb-4">
 
-    <div class="container mt-5 bg-primary text-white">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <div class="card w-100 bg-white text-dark my-2 wow animate__animated animate__bounceInLeft">
-            <div class="card-body p-5">
-              <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <div class="mb-5">
-                  <h2 class="mb-0 fw-bold">The</h2>
-                  <h2 class="mb-0 fw-bold">Perfect</h2>
-                  <h2 class="mb-0 fw-bold">Destination</h2>
-                  <h2 class="mb-0 fw-bold">For Dream Events!</h2>
-                </div>
-                <img src="img/dest.gif" alt="dc-b" width="100%">
+        <img src="img/img1.jpeg" class="img-thumbnail " style="--bs-aspect-ratio: 50%;" alt="...">
+
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
+
+        <img src="img/img2.jpeg" class="img-thumbnail " alt="...">
+
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
+
+        <img src="img/img3.jpeg" class="img-thumbnail " alt="...">
+
+      </div>
+    </div>
+    
+
+    <div class="row">
+      <div class="col-sm-12 col-md-4 mb-4">
+
+        <img src="img/img7.jpeg" class="img-thumbnail " alt="...">
+
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
+
+        <img src="img/img8.jpeg" class="img-thumbnail " alt="...">
+
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
+
+        <img src="img/img9.jpeg" class="img-thumbnail " alt="...">
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+
+      </div>
+      <div class="col-sm-12 col-md-6">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 bg-primary text-white">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 d-flex align-items-center">
+        <div class="card w-100 bg-white text-dark my-2 wow animate__animated animate__bounceInLeft">
+          <div class="card-body p-5">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+              <div class="mb-5">
+                <h2 class="mb-0 fw-bold">The</h2>
+                <h2 class="mb-0 fw-bold">Perfect</h2>
+                <h2 class="mb-0 fw-bold">Destination</h2>
+                <h2 class="mb-0 fw-bold">For Dream Events!</h2>
               </div>
-
-              <h4 style="margin-top: 5rem;">Now at Hi-Tech City, Hyderabad.</h4>
+              <img src="img/dest.gif" alt="dc-b" width="100%">
             </div>
+
+            <h4 style="margin-top: 5rem;">Now at Hi-Tech City, Hyderabad.</h4>
           </div>
         </div>
+      </div>
 
-        <div class="col-sm-12 col-md-6 d-flex align-items-center">
-          <div class="p-5">
-            <h4 class="fw-bold">People are talking about us</h4>
-            <div class="mt-3">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi molestiae consequatur ipsum, quasi sit
-                dolorum tenetur quibusdam hic, beatae ea eligendi, doloribus qui perspiciatis id voluptatibus laboriosam
-                voluptates? Officia, molestiae</p>
-              <small>- The young officer, Some company</small>
-            </div>
+      <div class="col-sm-12 col-md-6 d-flex align-items-center">
+        <div class="p-5">
+          <h4 class="fw-bold">Testimonials</h4>
+          <div class="mt-3">
+            <p>We celebrated our daughter ARNIKA 1st Birthday at Dream Center Banquet Hall.
+              The premises are in the middle of the city and the functional hall is very beautiful.
+              The facilities and food taste are fantastic. I prefer this place for my future parties.
 
-            <div class="mt-5">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi molestiae consequatur ipsum, quasi sit
-                dolorum tenetur quibusdam hic, beatae ea eligendi, doloribus qui perspiciatis id voluptatibus laboriosam
-                voluptates? Officia, molestiae</p>
-              <small>- The young officer, Some company</small>
-            </div>
+              - Sunil, SCION Edu Tech Pvt. Ltd</p>
+          </div>
+
+          <div class="mt-5">
+            <p>A perfect place for Business Meetings at Dream Center.
+              Provided all the facilities in one place. Good Audio & Video system is available.
+            </p>
+            <small>- BNI Sapphire</small>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container" style="margin-top: 8rem;">
-      <div class="row" id="contact">
-        <div class="col-sm-12 col-md-6 d-flex align-items-center mb-4 bg-white shadow">
-          <div class="p-5">
-            <h4 class="fw-bold display-6">Contact us</h4>
-            <h4 class="mb-5 fst-italic">For booking & queries</h4>
-            <h4 class="mb-0 fw-bold">+91 89775 31517</h4>
-            <p class="text-wrap">events.dreamcenter@gmail.com</p>
+  <div class="container" style="margin-top: 8rem;">
+    <div class="row" id="contact">
+      <div class="col-sm-12 col-md-6 d-flex align-items-center mb-4 bg-white shadow">
+        <div class="p-5">
+          <h4 class="fw-bold display-6">Contact us</h4>
+          <h4 class="mb-5 fst-italic">For booking & queries</h4>
+          <h4 class="mb-0 fw-bold">+91 89775 31517</h4>
+          <p class="text-wrap">events.dreamcenter@gmail.com</p>
 
-            <div class="mt-5">
-              <img src="img/icons/whatsapp.png" alt="wa" width="32"> <small>Chat with us now!</small><br>
-              <div class="mt-2"><a href="https://wa.me/918977531517" class="btn btn-success">Click here to chat on WhatsApp</a></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-6 d-flex align-items-center mb-4">
-          <div class="w-100">
-            <h4 class="fw-bold mb-3">Directions</h4>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.603943430335!2d78.37127911440206!3d17.430784506141112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93fe10d24179%3A0x75ae80c4f86d094b!2sDREAM%20CENTER%20-%20BANQUET%20FACILITY%20FOR%20LIFE%20EVENTS%2C%20CORPORATE%20EVENTS%2C%20TRAINING%20%26%20WORKSHOP!5e0!3m2!1sen!2sin!4v1652187141956!5m2!1sen!2sin"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+          <div class="mt-5">
+            <img src="img/icons/whatsapp.png" alt="wa" width="32"> <small>Chat with us now!</small><br>
+            <div class="mt-2"><a href="https://wa.me/918977531517" class="btn btn-success">Click here to chat on
+                WhatsApp</a></div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container my-5 py-5" id="location">
-      <div class="row">
-        <div class="col-md-4 mx-auto">
-          <div class="text-center w-100">
-            <!-- <img src="img/call.png" alt="testimonial" width="256" class="wow animate__animated animate__wobble"> -->
-            <img src="img/dc-logo.png" alt="dc" width="100%">
-            <h3 class="fw-bold">Dream Center</h3>
-            <small>Made with <span style="color: red;">&#x2764;</span> by</small> <br>
-            <small><a href="https://prasanta.business" target="_blank">Prasanta Communications</a></small>
-          </div>
+      <div class="col-sm-12 col-md-6 d-flex align-items-center mb-4">
+        <div class="w-100">
+          <h4 class="fw-bold mb-3">Directions</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.603943430335!2d78.37127911440206!3d17.430784506141112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93fe10d24179%3A0x75ae80c4f86d094b!2sDREAM%20CENTER%20-%20BANQUET%20FACILITY%20FOR%20LIFE%20EVENTS%2C%20CORPORATE%20EVENTS%2C%20TRAINING%20%26%20WORKSHOP!5e0!3m2!1sen!2sin!4v1652187141956!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <div class="container my-5 py-5" id="location">
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <div class="text-center w-100">
+          <!-- <img src="img/call.png" alt="testimonial" width="256" class="wow animate__animated animate__wobble"> -->
+          <img src="img/dc-logo.png" alt="dc" width="100%">
+          <h3 class="fw-bold">Dream Center</h3>
+          <small>Made with <span style="color: red;">&#x2764;</span> by</small> <br>
+          <small><a href="https://prasanta.business" target="_blank">Prasanta Communications</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-  </body>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
 
 </html>
